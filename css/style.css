@@ -30,6 +30,7 @@ body {
 
 .link {
   text-decoration: none;
+  cursor: pointer;
 }
 
 .link:hover {
@@ -62,6 +63,7 @@ body {
   display: flex;
   justify-content: start;
   align-items: center;
+  border: 1px solid #EEEEEE;
 }
 
 .ul-nav {
@@ -107,15 +109,11 @@ body {
 }
 
 
-
-.naviganion-part {
-}
-
 ul {
   list-style: none;
 }
 
-/* MAIN*/
+/* MAIN */
 
 .banner {
   height: 600px;
@@ -152,10 +150,11 @@ ul {
 
 .text-button {
   color: var(--color-white);
-  font-style: normal;
+
   font-weight: bold;
   font-size: 16px;
   line-height: 30px;
+  letter-spacing: 0.06em;
 }
 
 /* quality*/
