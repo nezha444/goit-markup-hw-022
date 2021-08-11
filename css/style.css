@@ -3,6 +3,9 @@
   margin: 0;
   font-family: 'Roboto', sans-serif;
   font-family: 'Raleway', ;
+}
+
+:root{
   --color-blue: #2196f3;
   --color-white: #fff;
   --color-grey: #757575;
@@ -11,9 +14,23 @@
 
 body {
   box-sizing: border-box;
-  width: 1600px;
   margin: 0 auto;
   color: var(--color-black);
+}
+
+ul {
+  list-style: none;
+}
+
+img{
+  display: block;
+}
+
+.container{
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
 }
 
 .black{
@@ -41,9 +58,6 @@ body {
   color: #2196f3;
 }
 
-.link:active {
-  color: #2196f3;
-}
 
 .link:visited {
   color: none;
@@ -58,8 +72,6 @@ body {
 
 .main-header {
   background-color: var(--color-white);
-  width: 1600px;
-  height: 80px;
   display: flex;
   justify-content: start;
   align-items: center;
@@ -73,7 +85,7 @@ body {
 }
 
 .webstudio {
-  margin: 0 93px 0 215px;
+  margin: 0 93px 0 0px;
   font-weight: bold;
   font-size: 26px;
   line-height: 31px;
@@ -100,28 +112,33 @@ body {
 }
 
 .mail {
-  margin: 0 50px 0 331px;
   font-weight: 500;
 }
 
 .tel{
   font-weight: 500;
+  margin: 0 0 0 50px;
 }
 
-
-ul {
-  list-style: none;
+.mail-tel{
+  display: flex;
+  margin-left: auto;
+  align-items: center;
 }
+
+.container-nav{
+  display: flex;
+
+}
+
 
 /* MAIN */
 
 .banner {
-  height: 600px;
-  background: #2f303a;
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  background: #2f303a;
+  padding-bottom: 200px;
 }
 
 .banner-text {
@@ -130,27 +147,27 @@ ul {
   text-transform: uppercase;
   text-align: center;
   letter-spacing: 0.06em;
-  width: 696px;
-  height: 120px;
-  left: 452px;
-  top: 280px;
+  max-width: 696px;
   padding-bottom: 30px;
+  margin: 0 auto;
+  padding-top: 200px;
 }
 
 .button {
   background-color: var(--color-blue);
-  width: 200px;
-  height: 50px;
-  left: 700px;
-  top: 430px;
+  min-width: 200px;
+  min-height: 50px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  display: block;
+  margin: 0 auto;
+
+  
 }
 
 .text-button {
   color: var(--color-white);
-
   font-weight: bold;
   font-size: 16px;
   line-height: 30px;
@@ -202,10 +219,8 @@ ul {
 
 .doing-pic {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  flex-direction: row;
-  margin-right: 30px;
 }
 
 .doing-text {
@@ -219,35 +234,29 @@ ul {
 }
 
 .doing-img {
-  margin-right: 30px;
+
 }
 
 .team {
   background-color: #f5f4fa;
-  height: 648px;
-  width: 1600px;
-  left: 0px;
-  top: 1449px;
   border-radius: 0px;
+  padding-bottom: 95px;
 }
 
 .our-team {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 36px;
   line-height: 42px;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--color-black);
   padding-top: 94px;
+  margin-bottom: 50px;
 }
 
 .team-container {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
   justify-content: space-between;
-  padding: 50px 215px 94px 215px;
 }
 
 .box-team {
@@ -281,24 +290,24 @@ ul {
 }
 
 .footer {
-  height: 252px;
-  width: 1600px;
   background-color: #2f303a;
   display: flex;
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .address {
-  margin: 20px 0 60px 207px;
+  margin: 20px 0 0 0;
   font-style: normal;
   font-weight: 400;
   letter-spacing: 0.03em;
 }
 
 .logo {
-  margin: 60px 0 0 207px;
+  margin: 60px 0 0 0px;
 }
 
 .logo {
